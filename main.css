@@ -6,7 +6,6 @@ body {
   padding-right: 1em;
   padding-top: .20em;
   float: left;
-  
 }
 #navbar {
   position: fixed;
@@ -60,7 +59,8 @@ body {
     font-size: 150%;
   }
   #logo {
-    height: 60px;
+    height: 30px;
+
   }
 }
 @media (min-width: 720px;) {
