@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <title>Git Documentation || Linux</title>
+</head>
+<body>
+  <nav id="navbar">
+    <header>Git Documentation || <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg"
+    alt="photo of git logo" height="20px" id="logo"> Linux </header>
+      <ul>
+        <li>
+          <a href="#Introduction" class="nav-link">Introduction</a>
+        </li>
+        <li>
+          <a href="#Getting_Started" class="nav-link">Getting Started</a>
+        </li>
+        <li>
+          <a href="#Commit" class="nav-link">Commit</a>
+        </li>
+        <li>
+          <a href="#Push" class="nav-link">Push</a></li>
+        <li>
+          <a href="#Pull" class="nav-link" id="pull">Pull</a>
+        </li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>
+        Introduction
+      </header>
+      <p>Git is an open source distributed version control system (DVCS).
+      In simpler terms, it is an application that allows developers to
+      mirror software on multiple computers and track changes. This technology
+      allows multiple developers to collaborate on software over the internet
+      without having the need for a centralized backup.</p>
+      <li>Git was created in 2005 by Linus Torvalds. Its current maintainer
+        is Junio Hamano</li>
+      <p>To get started, begin by dowloading Git on their
+        <a href="https://git-scm.com/" target="_blank">website.</a> If you are
+      using a linux distribution, use the commands below</p>
+      <code>
+        $ sudo apt-get update
+        <br>
+        $ sudo apt-get install git
+      </code>
+    </section>
+    <section class="main-section" id="Getting_Started">
+      <header>
+        Getting Started
+      </header>
+      <p>Once you have downloaded Git onto your computer, you will want to
+      <a href="https://github.com/" target="_blank">create a GitHub account here.</a> Once your
+      account is created, create a new repository on your account. Take note
+      of the remote link on the repository page.</p>
+      <img src="images/repoRemote.png" alt="photo of remote link">
+      <p>When you have a GitHub account and new repository created, you can
+      follow the steps and commands listed below.</p>
+      <li>Configure your GitHub account onto your machine</li>
+      <li>Initialize your local repository</li>
+      <li>Add your remote repository</li>
+      <br>
+      <code>
+        // Config your GitHub account <br>
+        $ git config -global user.name "[name]"<br>
+        $ git config -global user.email "[email address]"<br><br>
+
+        //Initialize local repo <br>
+        $ git cd "[filepath to your folder]"<br><br>
+
+        //Add remote repo <br>
+        $ git remote add origin "[remote repo URL]"<br><br>
+      </code>
+    </section>
+    <section class="main-section" id="Commit">
+      <header>
+        Commit
+      </header>
+      <p>Now that you have your machine configured, you are ready to start
+      coding! Once you are ready to upload your changes to git hub, you will
+      commit your changes to your local repository.</p>
+      <p>To begin, you will need to make sure your terminal is working within
+      the correct filepath. Now follow the steps and commands listed below.</p>
+      <li>Add your file changes to the staging area</li>
+      <li>Record the files into your local repository</li>
+      <br>
+      <code>
+        //Stage your files ("." adds all of the changed files) <br>
+        $ git add . <br><br>
+
+        //Record files to local repo <br>
+        $ git commit -m "[create a message describing your changes]"<br>
+      </code>
+    </section>
+    <section class="main-section" id="Push">
+      <header>
+        Push
+      </header>
+      <p> Once you have committed your changes to your local repository, you
+      now need to upload your changes to your remote repository.</p>
+      <p>Now follow the steps and commands listed below.</p>
+      <li>Push your files to your remote repository</li>
+      <br>
+      <code>
+        //Push files (For this demo, we will push to master branch)<br>
+        $ git push -u origin master <br><br>
+
+        //Use this command after your first initial push <br>
+        $ git push <br>
+      </code>
+    </section>
+    <section class="main-section" id="Pull">
+      <header>
+        Pull
+      </header>
+      <p>Congratulations! You have uploaded files to a remote repository! We
+      will now discuss the pull command. If you work on different machines
+      or have multiple people working on the same repository, you can use the
+      "pull" command to update your local repository with any changes in the
+      remote repository.</p>
+      <p>To update your repository with any changes, follow the steps and commands listed below.</p>
+      <li>Use the pull command</li>
+      <br>
+      <code>
+        //Updates local repo with remote repo changes <br>
+        $ git pull <br>
+      </code>
+    </section>
+  </main>
+</body>
+</html>
