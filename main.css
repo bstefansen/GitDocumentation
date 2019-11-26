@@ -6,6 +6,7 @@ body {
   padding-right: 1em;
   padding-top: .20em;
   float: left;
+  height: 40px;
 }
 #navbar {
   position: fixed;
