@@ -35,8 +35,16 @@ body {
   padding-left: 1em;
 }
 #navbar a {
+  display: block;
   text-decoration: none;
   color: black;
+  transition: transform 0.3s ease-out;
+  transition: 0.3s;
+}
+#navbar a:hover {
+  color: #f34f29;
+  transform: translate(8px);
+
 }
 #main-doc {
   position: relative;
