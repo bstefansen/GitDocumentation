@@ -65,6 +65,17 @@ body {
   padding: 1em;
   border-radius: 10px;
 }
+footer {
+  position: fixed;
+  left: 0px;
+  padding-left: 1em
+  bottom: 0px;
+  bottom: 0px;
+  width: 300px;
+}
+footer p {
+  padding-left: 1em;
+}
 @media (min-width: 1367px){
   body {
     font-size: 150%;
