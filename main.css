@@ -52,6 +52,7 @@ body {
 #main-doc {
   position: relative;
   margin-left: 310px;
+  margin-right: 1em;
   margin-bottom: 10em;
 }
 #main-doc header {
@@ -98,6 +99,33 @@ footer p {
 @media (max-width: 720px) {
   body {
     font-size: 80%;
+  }
+  #navbar {
+    position: relative;
+    width: auto;
+    border: none;
+  }
+  #navbar ul {
+    border-bottom: solid 2px black;
+    text-align: center;
+    width: auto;
+    margin: auto;
+  }
+  #navbar li {
+    display: inline-block;
+    border: none;
+  }
+  #navbar a:hover {
+    transform: translateY(3px);
+  }
+  #main-doc {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  footer {
+    position: relative;
+    text-align: center;
+    width: auto;
   }
 }
 @media (max-width: 479px) {
