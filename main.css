@@ -47,7 +47,7 @@ body {
 #Getting_Started img {
   border-radius: 10px;
   box-shadow: 0px 3px 5px 1px black;
-  margin: 1em;
+  margin-bottom: 1em;
 }
 #main-doc {
   position: relative;
