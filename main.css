@@ -3,6 +3,7 @@ html {
 }
 body {
   background-image: linear-gradient(90deg, #FFcFFF, #EEEEEE);
+  border: solid 3px black;
 }
 #logo {
   display: block;
