@@ -94,20 +94,20 @@ footer p {
     height: 30px;
   }
 }
-@media (max-width: 1366px){
-
-}
 @media (max-width: 720px) {
   body {
     font-size: 80%;
   }
   #navbar {
-    position: relative;
-    width: auto;
+    position: fixed;
+    width: 100%;
     border: none;
+    bottom: auto;
+    background-image: linear-gradient(90deg, #FFcFFF, #EEEEEE);
+    z-index: 500;
+    border: solid 3px black;
   }
   #navbar ul {
-    border-bottom: solid 2px black;
     text-align: center;
     width: auto;
     margin: auto;
@@ -120,6 +120,7 @@ footer p {
     transform: translateY(3px);
   }
   #main-doc {
+    margin-top: 10em;
     margin-left: 1em;
     margin-right: 1em;
   }
@@ -128,7 +129,4 @@ footer p {
     text-align: center;
     width: auto;
   }
-}
-@media (max-width: 479px) {
-
 }
